@@ -1,0 +1,12 @@
+version: "3.7"
+
+services:
+  php:
+    container_name: ${COMPOSE_PROJECT_NAME}_php
+    build:
+      context: .docker/php7.2-dev
+    volumes:
+      - ~/.composer/cache/:/.composer_cache/:rw
+      - .:/packages/GuzzleRewindMiddleware:rw
+    working_dir: /packages/GuzzleRewindMiddleware
+    user: 1000:1000

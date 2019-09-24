@@ -1,0 +1,41 @@
+{
+    "name": "adgoal/guzzle-rewind-middleware",
+    "type": "library",
+    "description": "Adgoal GuzzleRewindMiddleware",
+    "license": "proprietary",
+    "require": {
+        "guzzlehttp/guzzle": "*"
+    },
+    "require-dev": {
+        "jakub-onderka/php-console-highlighter": "^0.4",
+        "jakub-onderka/php-parallel-lint": "^1.0",
+        "mockery/mockery": "^1.2",
+        "phpmd/phpmd": "^2.6",
+        "phpstan/phpstan": "^0.11",
+        "phpstan/phpstan-mockery": "^0.11.0",
+        "phpstan/phpstan-phpunit": "^0.11",
+        "phpunit/phpunit": "^8.2",
+        "roave/security-advisories": "dev-master",
+        "sensiolabs-de/deptrac-shim": "^0.5",
+        "symfony/phpunit-bridge": "*",
+        "symplify/easy-coding-standard": "^6.0",
+        "vimeo/psalm": "^3.4",
+        "php-coveralls/php-coveralls": "^2.1"
+    },
+    "config": {
+        "preferred-install": {
+            "*": "dist"
+        },
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Adgoal\\GuzzleRewindMiddleware\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Adgoal\\GuzzleRewindMiddleware\\Tests\\Unit\\": "tests/unit"
+        }
+    }
+}
